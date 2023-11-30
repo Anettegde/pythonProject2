@@ -46,7 +46,7 @@ class Szalloda:
         self.addszoba(EgyagyasSzoba(25000,23))
 
     def lefoglalva(self):
-        return ' '.join(str(Szoba) for Szoba in self.szobak)
+        return ' \n'.join(str(Szoba) for Szoba in self.szobak)
 
 
 
@@ -54,12 +54,14 @@ def foglal(szalloda:Szalloda):
     szalloda.szobaadat()
 
     while True:
-        menu = input(f"Menü (számot vár): 1 foglalás, 2 lemondás, 3 Kilépés : ")
+        menu = input(f"Menü (számot vár): 1 listázás, 2 foglalás, 3 lemondás, 4 Kilépés : ")
         if menu == "1":
             print(szalloda.lefoglalva())
         elif menu =="2":
-            print("lemondás lesz")
+            print("foglalás lesz")
         elif menu =="3":
+            print("lemondás lesz")
+        elif menu =="4":
             print("Kilépés")
             break
 
