@@ -37,19 +37,16 @@ class Szalloda:
         return f"A szálloda neve: {self.nev}"
     def __init__(self):
         self.szobak = []
-    def lefoglalva(self):
-        return szoba in self.szobak
 
     def addszoba(self,szoba: Szoba):
         self.szobak.append(Szoba)
-
-
     def szobaadat(self):
         self.addszoba(EgyagyasSzoba(25000,25))
         self.addszoba(KetagyasSzoba(55000,55))
         self.addszoba(EgyagyasSzoba(25000,23))
 
-
+    def lefoglalva(self):
+        return ' '.join(str(Szoba) for Szoba in self.szobak)
 
 
 
