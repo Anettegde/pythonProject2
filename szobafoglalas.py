@@ -73,9 +73,9 @@ def foglal(szalloda:Szalloda):
         if menu == "1":
             print(szalloda.lista())
         elif menu =="2":
-            print("itt foglalás lesz")
-            fszoba = int(input("Foglalni kívánt szobaszáma: "))
-            print(szalloda.foglalni(fszoba))
+            print("itt foglalás lesz:  csak lejárt az idő .")
+           # fszoba = int(input("Foglalni kívánt szobaszáma: "))
+           # print(szalloda.foglalni(fszoba))
 
         elif menu =="3":
             print("lemondás lesz")
