@@ -1,8 +1,8 @@
 class Szoba:
 
-    def __init__(self,ar,szobaszam):
+    def __init__(self,ar,szobasz):
         self.ar = ar
-        self.szobaszam = szobaszam
+        self.szobasz = szobasz
 
 class EgyagyasSzoba(Szoba):
 
@@ -38,8 +38,8 @@ class Szalloda:
     def __init__(self):
         self.szobak = []
 
-    def addszoba(self,szoba: Szoba):
-        self.szobak.append(Szoba)
+    def addszoba(self, szoba: Szoba):
+        self.szobak.append(szoba)
     def szobaadat(self):
         self.addszoba(EgyagyasSzoba(25000,25))
         self.addszoba(KetagyasSzoba(55000,55))
