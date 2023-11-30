@@ -1,3 +1,6 @@
+import szobafoglalas
+
+
 class Szoba:
 
     def __init__(self,ar,szobasz):
@@ -48,6 +51,13 @@ class Szalloda:
     def lista(self):
         return ' \n'.join(str(Szoba) for Szoba in self.szobak)
 
+    def foglalni(self,szobasz):
+        for szobasz in self.szobak:
+            if szoba.szobasz == szobasz:
+                return szobafoglalas.foglal()
+
+
+
 
 
 def foglal(szalloda:Szalloda):
@@ -59,6 +69,8 @@ def foglal(szalloda:Szalloda):
             print(szalloda.lista())
         elif menu =="2":
             print("foglalás lesz")
+            fszoba = int(input("Foglalni kívánt szobaszáma: "))
+
         elif menu =="3":
             print("lemondás lesz")
         elif menu =="4":
