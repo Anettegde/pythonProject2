@@ -36,6 +36,20 @@ class Szalloda:
     def __str__(self):
        return f"A szálloda neve: {self.nev}"
 
+    def szobaadat(self):
+        self.addszoba(EgyagyasSzoba(25000,25))
+        self.addszoba(KetagyasSzoba(55000,55))
+
+
+def foglal(szalloda:Szalloda):
+    szalloda.szobaadat()
+
+    while True:
+        menu = input(f"1. foglalás, 2. lemondás, 3. listázás")
+
+
+
+
 
 szallodanev = Szalloda("Aranyhajó")
 print(szallodanev)
