@@ -30,12 +30,11 @@ class Foglalas:
 
 
 class Szalloda:
+    def __init__(self, nev):
+        self.nev = nev
 
-
-    #def __init__(self,nev):
-     #   self.nev = nev
-# def __str__(self):
-#   return f"A szálloda neve: {self.nev}"
+    def __str__(self):
+        return f"A szálloda neve: {self.nev}"
     def __init__(self):
         self.szobak = []
     def lefoglalva(self):
@@ -48,6 +47,7 @@ class Szalloda:
     def szobaadat(self):
         self.addszoba(EgyagyasSzoba(25000,25))
         self.addszoba(KetagyasSzoba(55000,55))
+        self.addszoba(EgyagyasSzoba(25000,23))
 
 
 
@@ -66,10 +66,13 @@ def foglal(szalloda:Szalloda):
             print("Kilépés")
             break
 
-szalloda = Szalloda()
 
 #szallodanev = Szalloda("Aranyhajó")
-#print(szallodanev)
+print(f"Üdv. a Szállodában")
 
+szalloda = Szalloda()
 foglal(szalloda)
+
+
+
 
