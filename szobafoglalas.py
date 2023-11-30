@@ -5,10 +5,24 @@ class Szoba:
         self.szobaszam = szobaszam
 
 class EgyagyasSzoba(Szoba):
-    pass
+
+        def __init__(self,ear,eszobaszam):
+            self.ear = ear
+            self.eszobaszam = eszobaszam
+
+        def __str__(self):
+            return f"Egyágyasszoba szám: {self.eszobaszam}, Ára: {self.ear}"
+
 
 class KetagyasSzoba(Szoba):
-    pass
+
+    def __init__(self, kar, kszobaszam):
+        self.kar = kar
+        self.kszobaszam = kszobaszam
+
+    def __str__(self):
+        return f"Kétágyasszoba szám: {self.kszobaszam}, Ára: {self.kar}"
+
 
 class Foglalas:
     pass
