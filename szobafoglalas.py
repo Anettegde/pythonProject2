@@ -7,6 +7,11 @@ class Szoba:
         self.ar = ar
         self.szobasz = szobasz
 
+    def foglal(self):
+        print("lejárt az idő")
+
+
+
 class EgyagyasSzoba(Szoba):
 
         def __init__(self,ear,eszobaszam):
@@ -51,9 +56,9 @@ class Szalloda:
     def lista(self):
         return ' \n'.join(str(Szoba) for Szoba in self.szobak)
 
-    def foglalni(self,szobasz):
-        for szobasz in self.szobak:
-            if szoba.szobasz == szobasz:
+    def foglalni(self,fszoba):
+        for szoba in self.szobak:
+            if szoba.fszoba == fszoba:
                 return szobafoglalas.foglal()
 
 
@@ -68,8 +73,9 @@ def foglal(szalloda:Szalloda):
         if menu == "1":
             print(szalloda.lista())
         elif menu =="2":
-            print("foglalás lesz")
+            print("itt foglalás lesz")
             fszoba = int(input("Foglalni kívánt szobaszáma: "))
+            print(szalloda.foglalni(fszoba))
 
         elif menu =="3":
             print("lemondás lesz")
