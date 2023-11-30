@@ -28,15 +28,16 @@ class Foglalas:
     pass
 
 
+
 class Szalloda:
 
+
+    #def __init__(self,nev):
+     #   self.nev = nev
+# def __str__(self):
+#   return f"A szálloda neve: {self.nev}"
     def __init__(self):
-        #self.nev = nev
         self.szobak = []
-
-    #def __str__(self):
-     #  return f"A szálloda neve: {self.nev}"
-
     def lefoglalva(self):
         return szoba in self.szobak
 
@@ -49,11 +50,14 @@ class Szalloda:
         self.addszoba(KetagyasSzoba(55000,55))
 
 
+
+
+
 def foglal(szalloda:Szalloda):
     szalloda.szobaadat()
 
     while True:
-        menu = input(f"1 foglalás, 2 lemondás, 3 Kilépés")
+        menu = input(f"Menü (számot vár): 1 foglalás, 2 lemondás, 3 Kilépés : ")
         if menu == "1":
             print(szalloda.lefoglalva())
         elif menu =="2":
