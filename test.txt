@@ -40,7 +40,7 @@ a) Egy osztály teljes funkcionalitásának megvalósítása
 b) Egy osztály öröklésének megakadályozása
 c) Egy osztály példányosításának lehetővé tétele
 d) Egy osztály öröklési szerkezetének és alapvető viselkedésének definiálása
-Válasz:d
+Válasz: d
 
 
 6. Mi az eredménye az alábbi Python kód futtatásának?
